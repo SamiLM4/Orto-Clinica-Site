@@ -31,14 +31,25 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 16px
+    gap: 16px;
+}
+
+/* Mantém os itens da navbar em linha no mobile e evita quebra */
+nav > div:last-child {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* permite rolagem horizontal se necessário */
 }
 
 nav a {
     color: inherit;
     text-decoration: none;
-    margin-left: 12px
+    margin-left: 12px;
+    white-space: nowrap; /* impede quebra de texto */
 }
+
 
 .hero {
     display: flex;
