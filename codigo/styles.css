@@ -1,0 +1,168 @@
+:root {
+    --accent: #0ea5a4;
+    --muted: #6b7280;
+    --bg: #f8fafc;
+    font-family: Inter, system-ui, Segoe UI, Arial, sans-serif
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: #0f172a;
+    line-height: 1.5
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #e6e6e6
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+    margin-left: 12px
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 36px 0
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: clamp(1.6rem, 3.6vw, 2.4rem)
+}
+
+.hero p {
+    margin: 0;
+    color: var(--muted)
+}
+
+.btn {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none
+}
+
+section {
+    padding: 24px 0
+}
+
+.grid {
+    display: grid;
+    gap: 18px
+}
+
+.services {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))
+}
+
+.card {
+    background: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 1px 0 rgba(2, 6, 23, 0.04)
+}
+
+.testimonials .note {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 12px
+}
+
+footer {
+    padding: 24px 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9rem
+}
+
+form .row {
+    display: grid;
+    gap: 12px
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px
+}
+
+.whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px
+}
+
+.services .card {
+    overflow: hidden;
+}
+
+.services .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    transition: transform .45s cubic-bezier(.2, .8, .2, 1);
+    will-change: transform;
+    transform-origin: center center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .services .card:hover img {
+        transform: scale(1.06);
+    }
+}
+
+@media(min-width:1024px) {
+    .container {
+        max-width: 1200px
+    }
+
+    #servicos .grid {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 24px 16px;
+        box-sizing: border-box;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    .services .card img {
+        height: 240px
+    }
+}
+
+@media(min-width:768px) {
+    .hero {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between
+    }
+}

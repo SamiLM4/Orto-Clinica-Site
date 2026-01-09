@@ -1,0 +1,140 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orto Clinica</title>
+    <meta name="description" content="Ajudo você a resolver X  serviços profissionais de exemplo">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" href="../imagens/img2.avif">
+    <link rel="apple-touch-icon" href="../imagens/img2.avif">
+    <meta name="theme-color" content="#0ea5a4">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav id="navbar">
+                <div><strong>Orto Clinica</strong></div>
+                <div>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#sobre">Sobre</a>
+                    <!-- <a href="#agendamento" class="btn-consulta">Agendar Consulta</a>-->
+                    <a href="#contato" class="btn">Contato</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Home -->
+        <section id="home" class="hero">
+            <div>
+                <h1>Seu sorriso é a nossa especialidade</h1>
+                <p>Cuidamos da sua saúde bucal com tecnologia, conforto e atenção personalizada em cada detalhe.</p>
+                <div style="margin-top:12px">
+                    <a class="btn whatsapp" href="https://wa.me/5511d999999999?text=Ol%C3%A1%20quero%20saber%20mais"
+                        target="_blank" rel="noopener">Agendar consulta com WhatsApp</a>
+                </div>
+            </div>
+            <div style="max-width:420px">
+                <img src="../imagens/img3.webp" alt="Imagem de apresentação"
+                    style="width:100%;border-radius:10px;display:block">
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <div class="card">
+                <h3>Quem somos</h3>
+                <p> uma clínica odontológica especializada em ortodontia, formada por
+                    profissionais qualificados e apaixonados por transformar sorrisos. Atuamos com experiência,
+                    atualização constante e foco total na saúde e bem-estar dos nossos pacientes.</p>
+
+                <p style="margin-top:8px"><strong>Confiança e cuidado:</strong> Trabalhamos com transparência em cada
+                    etapa do tratamento, desde o diagnóstico até o resultado final. Utilizamos tecnologia moderna,
+                    planejamento individualizado e um atendimento humanizado para garantir segurança, conforto e
+                    excelentes resultados.</p>
+            </div>
+        </section>
+
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <div class="grid services">
+                <div class="card">
+                    <h3 class="title-card">Limpeza Dental</h3>
+                    <img src="../imagens/img4.jpg" alt="img-card" style="width:100%;border-radius:10px;display:block">
+                    <p>Breve descrição objetiva do serviço A.</p>
+                </div>
+                <div class="card">
+                    <h3 class="title-card">Clareamento</h3>
+                    <img src="../imagens/img5.png" alt="img-card" style="width:100%;border-radius:10px;display:block">
+                    <p>Breve descrição objetiva do serviço B.</p>
+                </div>
+                <div class="card">
+                    <h3 class="title-card">Ortodontia</h3>
+                    <img src="../imagens/img6.jpg" alt="img-card" style="width:100%;border-radius:10px;display:block">
+                    <p>Breve descrição objetiva do serviço C.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="depoimentos" class="testimonials">
+            <h2>Feedback</h2>
+            <p class="note"><em>Depoimentos fictícios projeto demonstrativo para portfólio.</em></p>
+            <div class="grid">
+                <div class="card">
+                    <p>"Excelente trabalho, entregou antes do prazo e o resultado foi ótimo."</p>
+                    <small style="color:var(--muted)"> Cliente Demonstrativo</small>
+                </div>
+                <div class="card">
+                    <p>"Comunicação clara e entrega dentro do orçamento."</p>
+                    <small style="color:var(--muted)"> Outro Cliente</small>
+                </div>
+                <div class="card">
+                    <p>"Profissionais excelentes, oferecem um atendimento humanizado e eficiente."</p>
+                    <small style="color:var(--muted)"> Cliente</small>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <div class="grid" style="grid-template-columns:1fr;gap:18px">
+                <div class="card">
+                    <p> <a href="https://wa.me/5511999999999" target="_blank" rel="noopener">Fale conosco pelo WhatsApp: +55 (11)
+                            99999-9999</a></p>
+                    <p>ou nos envie um email</p>
+                    <form id="contactForm">
+                        <div class="row">
+                            <input type="text" name="name" placeholder="Seu nome" required>
+                            <input type="email" name="email" placeholder="Seu e-mail" required>
+                            <textarea name="message" rows="5" placeholder="Mensagem" required></textarea>
+
+                            <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap">
+                                <button class="btn" id="openMailClient" type="button">Abrir no cliente de e-mail</button>
+                                <button class="btn" id="openGmail" type="button">Abrir no Gmail</button>
+                            </div>
+
+                            <p style="margin-top:8px;font-size:0.9em;color:var(--muted)">O botão "Abrir no cliente de e-mail" tenta abrir seu aplicativo de e-mail padrão. "Abrir no Gmail" abre o Gmail numa nova aba se você estiver logado.</p>
+                        </div>
+                    </form>
+
+                    <div id="formMessage" style="display:none;margin-top:12px;padding:10px;border-radius:8px;background:#e6fffa;color:#064e40">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container"> 2026 Projeto demonstrativo por Murilo</div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
